@@ -1,3 +1,4 @@
+import 'package:dio/browser_imp.dart';
 import 'package:dio/native_imp.dart';
 
 import '../constants.dart';
@@ -11,7 +12,7 @@ class CustomDio extends DioForNative {
   }
 }
 
-class CustomDioWeb extends DioForNative {
+class CustomDioWeb extends DioForBrowser {
   CustomDioWeb() {
     options.baseUrl = BASE_URL;
     options.connectTimeout = 5000;
